@@ -8,5 +8,23 @@ import javax.persistence.Id;
 
 public class Autor{
 
-    
+    private int id;
+    private String nome;
+
+  public void setNome(String nome){
+    this.nome = nome;
+
+    public String getNome(){
+        return nome;
+    }
+
+  public void setId(int id){
+    this.id = id;
+
+    public int getId(int id){
+        return id;
+    }
+
+  }
+
 }
