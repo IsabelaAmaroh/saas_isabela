@@ -1,3 +1,4 @@
+package application.models;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Id;
@@ -7,7 +8,7 @@ import javax.persistence.MainyToOne;
 
 
 @Entity 
-@Table(name = 'livros')
+@Table(name = "livros")
 
 public class Livro{
 
@@ -17,19 +18,19 @@ public class Livro{
 
   public void setTitulo(String titulo){
     this.titulo = titulo;
-
+  }
     public String getTitulo(){
         return titulo;
     }
 
   public void setId(int id){
     this.id = id;
-
+  }
     public int getId(int id){
         return id;
     }
 
-    
+
 @MainyToOne
 @JoinColumn(name = 'id_autor')
 private Autor autor;
@@ -51,9 +52,5 @@ public void setGenero(Genero genero){
 public Genero getGenero(){
     return genero;
 }
-
-}
-
-  }
 
 }
